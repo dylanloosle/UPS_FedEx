@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html data-ng-app="rates">
+<head>
+    <title>UPS vs. FedEx</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body data-ng-controller="mainCtrl">
+    <header>
+        <div class="logos">
+            <img src="http://img2.wikia.nocookie.net/__cb20100615165603/logopedia/images/0/0e/UPS_logo_2003.png"/>
+            &nbsp;
+            &nbsp;
+            VS.
+            &nbsp;
+            &nbsp;
+            <img src="https://nflredskins.files.wordpress.com/2014/09/fedex-logo.jpg"/>
+        </div>
+                <nav>
+                    <a class="navbar" href="#/ship">Ship</a>
+                    <a class="navbar" href="#/track">Track</a>
+                    <a class="navbar" href="#/contact">Contact</a>
+                </nav>
+
+    </header>
+    <ng-view></ng-view>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mainCtrl.js"></script>
+    <script src="js/mainService.js"></script>
+    <script src="tracking/trackingCtrl.js"></script>
+    <script src="contact/contactCtrl.js"></script>
+    <script src="ship/shipCtrl.js"></script>
+    <script src="node_modules/node-easypost/lib/main.js"></script>
+    <script src="node_modules/node-easypost/test/main.js"></script>
+    <script src="node_modules/node-easypost/server.js"></script>
+</body>
+</html>
