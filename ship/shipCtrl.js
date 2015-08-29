@@ -2,9 +2,9 @@ var app = angular.module('rates');
 
 app.controller('shipCtrl', function($scope, mainService){
 
-    $scope.getStates = function() {
-        $scope.states = mainService.getStates();
-    };
+    //$scope.getStates = function() {
+    //    $scope.states = mainService.getStates();
+    //};
 
     $scope.shipFromCompany = '';
     $scope.shipFromAddr1 = '';
